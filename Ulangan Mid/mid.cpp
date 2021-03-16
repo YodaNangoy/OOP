@@ -98,31 +98,31 @@ string StudentRecord::setFinalLetterGrade(string newFinalLetterGrade) {
 // user inputs grades //
 void StudentRecord::inputAttendance()
 {
-    cout << "Attendance\t:";
+    cout << "Attendance : ";
     cin >> attendance;
 }
 
 void StudentRecord::inputQuizzes()
 {
-    cout << "Quiz\t\t:";
+    cout << "Quiz : ";
     cin >> quiz;
 }
 
 void StudentRecord::inputAssignment()
 {
-    cout << "Assignment\t:";
+    cout << "Assigment : ";
     cin >> assignment;
 }
 
 void StudentRecord::inputMidtermGrade()
 {
-    cout << "Mid Exam\t:";
+    cout << "Mid Exam : ";
     cin >> midterm;
 }
 
 void StudentRecord::inputFinalGrade()
 {
-    cout << "Final Exam\t:";
+    cout << "Final Exam : ";
     cin >> finalExam;
 }
 
@@ -137,13 +137,12 @@ int main()
     for (int i = 0; i < studentNumbers; i++) {
       cout << "Enter name : ";
       cin >> someStudent[i].name;
-      
-	  student[i].inputAttendance();
+
       student[i].inputQuizzes();
-      student[i].inputAssignment();
       student[i].inputMidtermGrade();
       student[i].inputFinalGrade();
-      
+      student[i].inputAttendance();
+      student[i].inputAssignment();
     }
 
     for (int i = 0; i < studentNumbers; i++) {
@@ -166,7 +165,7 @@ int main()
       cout << "----------------------------" << endl;
       cout << " Student     ||     Grade" << endl;
       cout << "----------------------------" << endl ;
-      cout << i+1<<". "<<"Name : " << someStudent[i].name<<"   "<<finalNumGrade <<" ("<< someStudent[i].finalLetterGrade <<")"<< endl;
+      cout << i+1<<". "<<"Name : " << someStudent[i].name<<"   "<<" "<< someStudent[i].finalLetterGrade <<"("<<finalNumGrade <<")"<< endl;
       cout << "----------------------------" << endl ;
     }
     cout<<endl;
