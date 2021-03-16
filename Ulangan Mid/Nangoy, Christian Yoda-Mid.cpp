@@ -165,7 +165,7 @@ int main()
       cout << "----------------------------" << endl;
       cout << " Student     ||     Grade" << endl;
       cout << "----------------------------" << endl ;
-      cout << i+1<<". "<<"Name : " << someStudent[i].name<<"   "<<"Grade "<< someStudent[i].finalLetterGrade <<"("<<finalNumGrade <<")"<< endl;
+      cout << i+1<<". "<<"Name : " << someStudent[i].name<<"   "<<" "<< someStudent[i].finalLetterGrade <<"("<<finalNumGrade <<")"<< endl;
       cout << "----------------------------" << endl ;
     }
     cout<<endl;
